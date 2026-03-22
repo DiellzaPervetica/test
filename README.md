@@ -921,6 +921,26 @@ Pollutant Correlation Heatmap:
 
 <img width="1911" height="1580" alt="image" src="https://github.com/user-attachments/assets/926df5ae-7a6b-43c5-a9be-b2030dc6a7c7" />
 
+- `pm25_distribution_comparison.png` :
+
+<img width="4470" height="1191" alt="image" src="https://github.com/user-attachments/assets/353ee2de-dee3-4b2e-973c-a8ac3f2a7825" />
+
+  
+- `total_generation_mw_distribution_comparison.png` :
+
+<img width="4468" height="1191" alt="image" src="https://github.com/user-attachments/assets/053639ff-459b-4811-baef-55489f941ead" />
+
+- `pollution_stagnation_index_distribution_comparison.png` :
+
+<img width="4470" height="1191" alt="image" src="https://github.com/user-attachments/assets/65d5d6de-60ce-443f-a699-1de5b5714a0e" />
+
+- `rain_mm_distribution_comparison.png` :
+
+<img width="4467" height="1191" alt="image" src="https://github.com/user-attachments/assets/9c1eed28-1d22-49a2-bc64-ca4436cf0df9" />
+
+- `temp_wind_interact_distribution_comparison.png` :
+
+<img width="4470" height="1191" alt="image" src="https://github.com/user-attachments/assets/662d5921-854e-49bf-a7ba-8358c1249d51" />
 
 ---
 
