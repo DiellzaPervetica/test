@@ -184,6 +184,8 @@ Gjatë leximit, ky dataset kërkon pastrim shtesë të header-it, sepse struktur
 ```text
 TEST/
 │
+├── app.py #Vizualizimi i tere projektit
+│
 ├── src/
 │   ├── data_cleaning/
 │   │   ├── 2A_datetime_and_duplicates.py
@@ -290,6 +292,10 @@ Rrjedha logjike është kjo:
 ---
 
 ## Pershkrimi i detajuar i cdo skripte
+
+## App.py - Dashboard
+
+- Ky projekt përfshin gjithashtu një dashboard interaktiv të ndërtuar me Streamlit, i cili shërben si një simulator vizual për eksplorimin në kohë reale të ndikimit që kanë prodhimi i termocentraleve dhe kushtet meteorologjike në ndotjen e ajrit në Prishtinë. Përmes këtij vizualizimi, përdoruesi mund të ndryshojë në mënyrë dinamike parametrat e prodhimit energjetik, temperaturës, reshjeve, lagështisë dhe erës, dhe të vëzhgojë menjëherë se si këto ndryshime reflektohen në nivelet e ndotësve kryesorë atmosferikë, veçanërisht te PM2.5. Dashboard-i është konceptuar si një komponent interaktiv dhe intuitiv që e bën analizën më të kuptueshme, më eksploruese dhe më afër një skenari simulues të botës reale.
 
 ## Data collection
 
