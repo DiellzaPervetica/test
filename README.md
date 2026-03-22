@@ -445,6 +445,10 @@ Folderi `1B_distinct_values/` përmban një skedar të veçantë për secilin at
 - `distinct_total_generation_mw.csv`
 - si dhe skedarët për atributet meteorologjike të pastruara sipas emërtimit.
 
+Pamje nga skedaret unik:
+
+<img width="216" height="289" alt="{DBB27AF7-8935-4189-90AB-624587087BFA}" src="https://github.com/user-attachments/assets/32f47cab-4898-4f79-9eab-887c81351c11" />
+
 
 #### Roli ne pipeline
 Ky hap mbështet eksplorimin fillestar të shpërndarjeve dhe kontrollin e domenit të vlerave.
@@ -463,8 +467,14 @@ Ky skript kryen pastrimin fillestar të dimensionit kohor dhe duplikateve.
 - konverton `datetime` në format korrekt,
 - heq rreshtat ku `datetime` është invalid,
 - rendit dataset-in sipas kohës,
+
+<img width="495" height="33" alt="{7CEB88CC-989B-436C-8FA7-0419144A38ED}" src="https://github.com/user-attachments/assets/cec00aab-5620-4c60-9428-4f12eb715584" />
+
 - numëron duplikatet,
 - heq duplikatet e plota.
+
+<img width="308" height="93" alt="{1DBC8645-552B-4E2F-A0CB-606E6BD3F65A}" src="https://github.com/user-attachments/assets/50220b1f-63cd-4f8e-a1ef-962ad42637eb" />
+
 
 #### Output
 - `data/2A_cleaned_no_duplicates.csv`
@@ -483,18 +493,39 @@ Ky skript zbaton rregulla të cilësisë së të dhënave.
 #### Cfare ben
 1. Për ndotësit:
    - zëvendëson vlerat negative me `NaN`, sepse fizikisht nuk kanë kuptim.
+
+<img width="512" height="93" alt="{0C81D64B-A74D-4E95-A0A6-3984C71E3294}" src="https://github.com/user-attachments/assets/938f0433-10ef-49db-9912-c8ed171f60ae" />
+
 2. Për drejtimin e erës:
    - normalizon këndet me operatorin `% 360`.
+
+<img width="489" height="67" alt="{F02A6AFC-BA27-434F-95B7-86B1A65A9967}" src="https://github.com/user-attachments/assets/ebf9098e-5ae0-4999-ab6c-5c0b10ae8838" />
+
 3. Për reshjet dhe borën:
    - kufizon vlerat minimale në `0`.
+
+<img width="460" height="79" alt="{914CA309-CC22-417F-A765-2859E4665F16}" src="https://github.com/user-attachments/assets/560223dd-1a43-48b4-97a8-32d7618d3001" />
+
 4. Për kolonat e energjisë:
    - kufizon vlerat negative në `0`.
+
+<img width="509" height="91" alt="{5F4D0161-B98D-4182-AC4B-3BFE405120E0}" src="https://github.com/user-attachments/assets/966bc5f6-dbbd-4496-bdaf-e05d89be397a" />
+
 5. Për lagështinë relative:
    - kufizon vlerat në intervalin `[0, 100]`.
+
+<img width="606" height="76" alt="{E9F73771-109C-4B82-9280-FBEE45ED2B89}" src="https://github.com/user-attachments/assets/70822281-b25c-4c46-89d9-1e8164a29079" />
+
 6. Për `total_generation_mw`:
    - e rillogarit nga `A3_MW + A4_MW + A5_MW + B1_MW + B2_MW`
    - dhe korrigjon mospërputhjet me totalin ekzistues.
+
+<img width="549" height="112" alt="{0A3BF60A-A524-4BEA-8DF1-47B6D5D51A61}" src="https://github.com/user-attachments/assets/d4b50c73-9640-48be-8fb8-f56c2cb3412b" />
+
 7. Rrumbullakon kolonat numerike në 3 shifra dhjetore.
+
+<img width="424" height="79" alt="{3661720A-987A-41F9-9DD0-CF8A14E2B71F}" src="https://github.com/user-attachments/assets/bb783372-bf4d-4ca5-8513-540fa23d363c" />
+
 
 #### Output
 - `data/2B_quality_checked.csv`
