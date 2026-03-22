@@ -548,9 +548,23 @@ Ky skript trajton vlerat mungesë.
 
 #### Cfare ben
 - llogarit mungesat për kolonë dhe përqindjen e tyre,
+
+<img width="486" height="55" alt="{01A3889B-10DA-4CF6-B7CB-E035F8E86192}" src="https://github.com/user-attachments/assets/928a6ed8-7b39-4275-a0f9-2e7ab8a9ee39" />
+
 - raporton sa vlera janë plotësuar për secilin ndotës,
+
+<img width="436" height="38" alt="{CE119CE1-8023-47EF-9506-C10DD4FDF390}" src="https://github.com/user-attachments/assets/4b7ee0b4-ddf2-4a0f-b0f4-05e0661173b7" />
+
 - plotëson vlerat mungesë sipas logjikës së përcaktuar,
+
+<img width="303" height="129" alt="{3540B4D7-B0C9-4BCB-AEF1-1243168EF91D}" src="https://github.com/user-attachments/assets/7ed3034b-734f-434e-bea2-6701b38ef879" />
+
+<img width="746" height="245" alt="image" src="https://github.com/user-attachments/assets/41ba9138-c6ac-4886-8df8-5fabeab93f7c" />
+
 - verifikon sa `NULL` mbeten në fund.
+
+<img width="359" height="40" alt="{73B7F4D2-33C2-4F4A-A6D8-15DA761D7F8F}" src="https://github.com/user-attachments/assets/b9de8d37-492e-48c5-b67d-1d8a163e05f0" />
+
 
 #### Output
 - `data/2C_missing_values_handled.csv`
@@ -573,12 +587,21 @@ Ky skript bën validimin final të dataset-it pas trajtimit të mungesave.
    
    dhe korrigjon rastet kur `pm25 > pm10` duke vendosur `pm25 = pm10`.
 
-2. Kontrollon gaps kohore:
+<img width="846" height="219" alt="image" src="https://github.com/user-attachments/assets/4f5c7fa0-b2b9-4571-916d-129fafd8d098" />
+
+
+3. Kontrollon gaps kohore:
    - konverton `datetime`,
    - llogarit diferencën ndërmjet rreshtave,
    - numëron boshllëqet më të mëdha se 1 orë.
 
+<img width="868" height="391" alt="image" src="https://github.com/user-attachments/assets/06b9f87f-0840-4ed7-a164-e96a28f134a7" />
+
+
 3. Kontrollon nëse kanë mbetur `NULL`.
+
+<img width="366" height="141" alt="{F77E8282-105B-45A2-ADFE-DB03A3297653}" src="https://github.com/user-attachments/assets/8b5ce324-d735-43f6-814e-692895bf63d5" />
+
 
 #### Output
 - `data/2D_validated_final_dataset.csv`
