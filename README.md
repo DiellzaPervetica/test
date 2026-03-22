@@ -419,9 +419,15 @@ Ky skript bën profilizimin e vlerave unike për një grup kolonash kryesore.
 
 #### Cfare ben
 - lexon dataset-in e integruar,
+
+<img width="428" height="126" alt="{85DD1928-3765-4E4A-B0D3-D437772217AC}" src="https://github.com/user-attachments/assets/012286f2-7b62-4f35-90db-f70fb9c366c6" />
+
 - për secilën kolonë nxjerr vlerat unike jo-null,
 - i rendit,
 - dhe i ruan si CSV të ndarë në folderin `data/1B_distinct_values/`.
+
+<img width="523" height="140" alt="{1410133E-14B9-47EE-8AA0-816CBF5B5718}" src="https://github.com/user-attachments/assets/a5667111-5910-4add-9ea8-036b7ce44bf7" />
+
 
 #### Output
 Folderi `1B_distinct_values/` përmban një skedar të veçantë për secilin atribut, p.sh.:
