@@ -399,8 +399,6 @@ Ky skript bën profilizimin e vlerave unike për një grup kolonash kryesore.
   - `B1_MW`
   - `B2_MW`
   - `total_generation_mw`
-    
-- <img width="654" height="179" alt="{9F08EA54-8B40-4671-AF78-3164B231C176}" src="https://github.com/user-attachments/assets/f1352081-d26b-49a6-b34d-352db801f30f" />
 
 
 #### Cfare ben
@@ -742,11 +740,27 @@ Folderi:
 - `pictures/4C_visualization_before_after/`
 
 me figurat:
-- `pm25_distribution_comparison.png`
-- `total_generation_mw_distribution_comparison.png`
-- `pollution_stagnation_index_distribution_comparison.png`
-- `rain_mm_distribution_comparison.png`
-- `temp_wind_interact_distribution_comparison.png`
+- `pm25_distribution_comparison.png` :
+
+<img width="4470" height="1191" alt="image" src="https://github.com/user-attachments/assets/353ee2de-dee3-4b2e-973c-a8ac3f2a7825" />
+
+  
+- `total_generation_mw_distribution_comparison.png` :
+
+<img width="4468" height="1191" alt="image" src="https://github.com/user-attachments/assets/053639ff-459b-4811-baef-55489f941ead" />
+
+- `pollution_stagnation_index_distribution_comparison.png` :
+
+<img width="4470" height="1191" alt="image" src="https://github.com/user-attachments/assets/65d5d6de-60ce-443f-a699-1de5b5714a0e" />
+
+- `rain_mm_distribution_comparison.png` :
+
+<img width="4467" height="1191" alt="image" src="https://github.com/user-attachments/assets/9c1eed28-1d22-49a2-bc64-ca4436cf0df9" />
+
+- `temp_wind_interact_distribution_comparison.png` :
+
+<img width="4470" height="1191" alt="image" src="https://github.com/user-attachments/assets/662d5921-854e-49bf-a7ba-8358c1249d51" />
+
 
 #### Roli ne pipeline
 Ky hap dokumenton vizualisht efektin e transformimeve statistikore.
