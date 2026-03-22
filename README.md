@@ -913,13 +913,14 @@ Folderi `pictures/4C_visualization_before_after/` përmban figura që krahasojn�
 ### Vend per figurat ne README
 Këtu mund të shtohen më vonë figurat me sintaksë si:
 
-```md
-![Pollutant vs Predictors Heatmap]
+Pollutant vs Predictors Heatmap:
+
 <img width="2702" height="2072" alt="image" src="https://github.com/user-attachments/assets/e02dfac3-c9f8-44ef-847e-efbefa69936c" />
 
-![Pollutant Correlation Heatmap]
+Pollutant Correlation Heatmap:
+
 <img width="1911" height="1580" alt="image" src="https://github.com/user-attachments/assets/926df5ae-7a6b-43c5-a9be-b2030dc6a7c7" />
-```
+
 
 ---
 
