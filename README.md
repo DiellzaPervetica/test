@@ -342,7 +342,10 @@ Ky është hapi themelor i integrimit të të tre burimeve.
 1. Lexon dataset-in e ndotjes së ajrit.
 2. Lexon dataset-in meteorologjik, duke anashkaluar rreshtat hyrës jo-standardë.
 3. Lexon dataset-in e energjisë pa header standard dhe e zbulon automatikisht rreshtin e header-it.
-4. Normalizon emrat e kolonave të energjisë:
+
+<img width="366" height="54" alt="{BE5A24DC-1B28-4178-AC88-BC896FC2D274}" src="https://github.com/user-attachments/assets/1e1f6cd1-363b-4a64-9c9e-fcf356cfb1f6" />
+   
+5. Normalizon emrat e kolonave të energjisë:
    - `Ora Hour` → `hour`
    - `DATA Date` → `date`
    - `A3 (MW)` → `A3_MW`
@@ -350,22 +353,35 @@ Ky është hapi themelor i integrimit të të tre burimeve.
    - `A5 (MW)` → `A5_MW`
    - `B1 (MW)` → `B1_MW`
    - `B2 (MW)` → `B2_MW`
-5. Konverton kolonat kohore në `datetime`.
-6. Harmonizon timezone-in e ndotjes dhe motit në `Europe/Belgrade`, pastaj i kthen në naive timestamps.
-7. Pastron duplikatet sipas `datetime`.
-8. Për dataset-in e energjisë:
+
+<img width="369" height="137" alt="{AAE917B3-90A4-4AEF-972B-944317A01B36}" src="https://github.com/user-attachments/assets/7b1a9d31-108a-4b06-ae95-51c1ed11c883" />
+
+6. Konverton kolonat kohore në `datetime`.
+8. Harmonizon timezone-in e ndotjes dhe motit në `Europe/Belgrade`, pastaj i kthen në naive timestamps.
+
+<img width="575" height="221" alt="{F4E9923A-69C5-4D33-80AC-C79D01092939}" src="https://github.com/user-attachments/assets/52283448-fda9-4aa2-947c-2261663d4255" />
+
+10. Pastron duplikatet sipas `datetime`.
+11. Për dataset-in e energjisë:
    - konverton `date`,
    - konverton `hour`,
    - krijon `datetime`,
    - llogarit `total_generation_mw`.
-9. Zgjedh vetëm kolonat relevante nga secili burim.
-10. Kryen dy merge-e me `how="inner"`:
+
+<img width="592" height="81" alt="image" src="https://github.com/user-attachments/assets/8e114cc1-a1fa-4fbd-9461-357d0e7721be" />
+
+11. Zgjedh vetëm kolonat relevante nga secili burim.
+
+<img width="381" height="57" alt="{65723B3D-B2FE-4A3A-84F0-49593283C896}" src="https://github.com/user-attachments/assets/98af75ad-9e60-4a80-8558-0e910875bb02" />
+
+13. Kryen dy merge-e me `how="inner"`:
     - ndotja + moti,
     - pastaj rezultati + energjia.
-11. Krijon kolonat:
+14. Krijon kolonat:
     - `date`
     - `hour`
     - `interval_start`
+<img width="431" height="94" alt="{AA095FE6-7145-4932-98A4-BCCD0F0B1ACA}" src="https://github.com/user-attachments/assets/9cac6b45-b4fd-47a2-b479-650faa2d1d9f" />
 
 #### Output
 - `data/1A_merged_data_hourly_2023_2025.csv`
