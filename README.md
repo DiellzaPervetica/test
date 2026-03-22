@@ -1,6 +1,3 @@
-Po ta jap një version të plotë të `README.md`, të shkruar në stil profesional, të detajuar dhe të përshtatshëm për GitHub. E kam ndërtuar sipas strukturës së projektit tënd, skriptave që ke dërguar, output-eve në `data/`, figurave në `pictures/` dhe logjikës së pipeline-it nga mbledhja e të dhënave deri te seleksionimi final i tipareve për `pm25`.
-
-````markdown
 # Prishtina Air Pollution, Weather and Energy Production Pipeline (2023–2026)
 
 <table>
@@ -1058,6 +1055,4 @@ Ky seksion mund të plotësohet sipas ndarjes reale të punës, për shembull:
 - Dr. Sc. Mërgim H. Hoti
 - Burimet publike dhe institucionale të përdorura për ndërtimin e dataset-eve hyrëse
 - Të gjithë anëtarët e grupit që kontribuan në ndërtimin e pipeline-it
-````
 
-Nëse do, në mesazhin tjetër ta bëj edhe një version të dytë edhe më “akademik”, më afër stilit të README-së së kolegëve të tu, me nënseksione edhe më të gjata për çdo CSV dhe çdo figurë.
