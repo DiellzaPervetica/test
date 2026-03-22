@@ -628,6 +628,9 @@ Ky skript kryen analizën fillestare të target-it dhe marrëdhënieve të tij m
    - `pm25`
    - `so2`
 
+<img width="689" height="112" alt="image" src="https://github.com/user-attachments/assets/1487f6c8-0454-49a3-8a8d-17ede5f5cd2c" />
+
+
 2. Formon një subset me:
    - ndotësit,
    - kolonat e energjisë,
@@ -635,7 +638,10 @@ Ky skript kryen analizën fillestare të target-it dhe marrëdhënieve të tij m
 
 3. Llogarit matricën e korrelacionit.
 
-4. Krijon dy heatmap-a:
+  <img width="508" height="111" alt="{38275DD5-5A2E-4CFF-91C0-5C666AFF3DFE}" src="https://github.com/user-attachments/assets/86d203a6-4fcc-454a-8efe-d5aeaa473b77" />
+
+
+5. Krijon dy heatmap-a:
    - korrelacioni i ndotësve me energjinë dhe motin,
    - korrelacioni mes vetë ndotësve.
 
@@ -667,12 +673,16 @@ Ky skript ndërton dataset-in e pasuruar me tipare të reja.
   - `day_of_week`
   - `month`
 
+<img width="507" height="93" alt="{9D5E10B1-7451-40A8-BA92-01DE19B074E0}" src="https://github.com/user-attachments/assets/382465fc-9cae-4af7-925a-1ff1dc0ae6a1" />
+
 ##### 2. Encodim ciklik
 Krijon:
 - `hour_sin`
 - `hour_cos`
 - `month_sin`
 - `month_cos`
+
+<img width="388" height="68" alt="{027EC64A-7F94-4673-8856-A2FA95B7FD55}" src="https://github.com/user-attachments/assets/e6ef76dd-d39e-4241-aadf-313f80d33cb4" />
 
 Qëllimi është të përfaqësojë natyrën ciklike të orës dhe muajit.
 
@@ -687,15 +697,20 @@ krijohen lag-e:
 - `lag_3h`
 - `lag_6h`
 
+
 ##### 4. Rolling features
 Krijohen:
 - `total_gen_rolling_sum_12h`
 - `total_gen_rolling_sum_24h`
 
+<img width="1216" height="190" alt="image" src="https://github.com/user-attachments/assets/153a08c8-ea7f-47a0-b829-88eacb61f1cd" />
+
 ##### 5. Interaction features
 Krijohen:
 - `temp_wind_interact`
 - `generation_humidity_interact`
+
+<img width="595" height="41" alt="{CB1FE4F3-C35F-4AB7-8E84-B5113E104D46}" src="https://github.com/user-attachments/assets/161bea77-ad84-4b1c-a731-d92b75a50321" />
 
 ##### 6. Stagnation proxy
 Krijohet:
