@@ -1049,8 +1049,7 @@ Folderi `pictures/4C_visualization_before_after/` përmban figura që krahasojn�
 - `temp_wind_interact_distribution_comparison.png`
 - `total_generation_mw_distribution_comparison.png`
 
-### Vend per figurat ne README
-Këtu mund të shtohen më vonë figurat me sintaksë si:
+### Vend per figurat e projektit
 
 Pollutant vs Predictors Heatmap:
 
@@ -1085,7 +1084,7 @@ Pollutant Correlation Heatmap:
 
 ## Teknikat e zbatuara dhe lidhja me lenden
 
-Ky projekt përmbush në mënyrë të drejtpërdrejtë temat kryesore të lëndës “Përgatitja dhe vizualizimi i të dhënave”.
+Ky projekt përmbush në mënyrë të drejtpërdrejtë temat kryesore të lëndës “Machine Learning”.
 
 ### 1. Data collection
 - Shkarkim dhe konsolidim i të dhënave nga burime të ndryshme.
