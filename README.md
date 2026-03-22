@@ -697,13 +697,14 @@ krijohen lag-e:
 - `lag_3h`
 - `lag_6h`
 
+<img width="611" height="128" alt="{0129CD0F-43C3-46C7-857F-CC79A2E4E235}" src="https://github.com/user-attachments/assets/7f5885ea-3b9b-41b0-a1f2-24b55c428940" />
 
 ##### 4. Rolling features
 Krijohen:
 - `total_gen_rolling_sum_12h`
 - `total_gen_rolling_sum_24h`
 
-<img width="1216" height="190" alt="image" src="https://github.com/user-attachments/assets/153a08c8-ea7f-47a0-b829-88eacb61f1cd" />
+<img width="604" height="34" alt="{84F7C7EB-928A-4284-92DF-77244C86351B}" src="https://github.com/user-attachments/assets/8cd91bcd-5ad6-4c38-b1e7-a03d92793557" />
 
 ##### 5. Interaction features
 Krijohen:
@@ -718,13 +719,20 @@ Krijohet:
 
 Ky indikator përpiqet të përfaqësojë situatat kur ka prodhim të lartë dhe erë të ulët, pra kushte më të favorshme për grumbullim ndotjesh.
 
+<img width="593" height="31" alt="{7736A968-7617-4B05-AB85-04C693E45840}" src="https://github.com/user-attachments/assets/0b615ce4-1d7f-4258-bfb9-1d04e49561ac" />
+
 ##### 7. Wind vector decomposition
 Nga shpejtësia dhe drejtimi i erës krijohen:
 - `wind_x_vector`
 - `wind_y_vector`
 
+<img width="322" height="69" alt="{9EE0FD41-466C-406C-A328-75084CFF86E6}" src="https://github.com/user-attachments/assets/69a803b2-5af1-4a22-beb9-808ec06a6aeb" />
+
 ##### 8. Heqja e rreshtave me `NaN`
 Pas krijimit të lag-eve dhe rolling windows hiqen rreshtat fillestarë që mbeten pa vlera të plota.
+
+<img width="252" height="34" alt="{9214D524-77A2-425F-88FE-1406798AAE8D}" src="https://github.com/user-attachments/assets/367b4a97-7563-4864-ab33-e71c1d7bd6ea" />
+
 
 #### Output
 - `data/3B_engineered_dataset.csv`
@@ -762,9 +770,20 @@ Vlerat jashtë këtij intervali nuk fshihen, por priten në kufijtë përkatës.
 
 #### Cfare ben
 - identifikon kolonat numerike kandidate,
+
+<img width="604" height="191" alt="image" src="https://github.com/user-attachments/assets/1277d0ad-20f8-4edd-aa83-7c3518c640b5" />
+
 - llogarit kufijtë e poshtëm dhe të sipërm,
+
+<img width="333" height="264" alt="{7637B515-ECC8-42F7-93E4-F51A36886583}" src="https://github.com/user-attachments/assets/5dc44eae-bd83-4230-8c0c-96b366d56d3f" />
+
 - numëron sa vlera u cap-en në secilin krah,
+
+<img width="300" height="64" alt="{868F8310-591A-4475-A72B-6B3610709F19}" src="https://github.com/user-attachments/assets/cc9dd492-043c-4cf0-8eea-6e39a24f3fd0" />
+
 - krijon një raport për tiparet me më shumë vlera të kufizuara.
+
+<img width="304" height="92" alt="{5C06F89A-7C0E-4C98-B3D6-7EB360549105}" src="https://github.com/user-attachments/assets/f774921a-69c9-493e-bb9d-55b0fe23b267" />
 
 #### Output
 - `data/4A_outliers_handled.csv`
@@ -793,8 +812,17 @@ Për secilën kolonë numerike:
 
 #### Cfare ben
 - krahason skewness para dhe pas transformimit,
+
+<img width="293" height="140" alt="{ACF2D39A-7132-44DE-94FD-02FBADE7EFE2}" src="https://github.com/user-attachments/assets/52ef2624-8f11-497a-a0c8-219132acfe5e" />
+
 - ruan metodën e përdorur për secilën kolonë,
+
+<img width="514" height="283" alt="{54D65469-B661-45E2-8812-109DCE98FE9B}" src="https://github.com/user-attachments/assets/3de4131c-acf9-4a06-80d8-beb30e751223" />
+
 - raporton mean absolute skewness dhe median absolute skewness para/pas.
+
+<img width="407" height="86" alt="{27116D5F-1372-4BBB-8835-D8036D487641}" src="https://github.com/user-attachments/assets/33186496-a0f3-45a0-a447-d9ac72219563" />
+
 
 #### Output
 - `data/4B_skewness_handled.csv`
@@ -868,9 +896,19 @@ Ky skript standardizon të gjitha kolonat numerike.
 - ndan kolonat jo-numerike:
   - `datetime`
   - `date`
+<img width="598" height="80" alt="image" src="https://github.com/user-attachments/assets/3b8d43de-8615-4725-8c5f-c773c74ec3f4" />
+
 - standardizon të gjitha kolonat e tjera me `StandardScaler`,
+
+<img width="245" height="107" alt="{51FDEC3D-668F-4A86-8459-33B135196EF7}" src="https://github.com/user-attachments/assets/3f8a062d-ef76-49dc-b919-029f3b898aca" />
+
 - rikombinon kolonat kohore me kolonat e shkallëzuara,
+
+<img width="801" height="74" alt="image" src="https://github.com/user-attachments/assets/e5a9f4c5-a3b1-4bf1-a60e-6a9f03a08a4e" />
+
 - ruan scaler-in e trajnuar.
+
+<img width="239" height="73" alt="{90AB8B67-BC65-4DC9-BC92-374F23CB0AF9}" src="https://github.com/user-attachments/assets/1a0cae99-1434-486b-b814-794fc2c30c57" />
 
 #### Output
 - `data/4D_scaled_dataset.csv`
@@ -912,9 +950,13 @@ Hiqen:
 - të gjitha kolonat me `lag` në emër
 - çdo kolonë tjetër që përmban `pm25` përveç target-it
 
+<img width="578" height="170" alt="{EFCA4BD3-8CC8-415E-9549-24C0D552CEE1}" src="https://github.com/user-attachments/assets/4c08beec-c313-4a65-a8df-404cf0206fad" />
+
 ##### 2. Heqje e kolonave konstante ose pothuaj konstante
 - kolona me vetëm 1 vlerë unike
 - kolona me devijim standard pothuaj zero
+
+<img width="433" height="108" alt="{4008EF22-1994-45BF-999C-9B987BC2C534}" src="https://github.com/user-attachments/assets/ee46b9fb-c185-4479-baff-13c2531c6685" />
 
 ##### 3. VIF-based elimination
 Për kolonat e mbetura:
@@ -922,12 +964,18 @@ Për kolonat e mbetura:
 - hiqet iterativisht kolona me VIF më të lartë derisa:
   - VIF maksimal të jetë më i vogël ose i barabartë me `7.0`
 
+<img width="514" height="82" alt="image" src="https://github.com/user-attachments/assets/21f5dded-12fd-4750-b587-5a92fffa0e48" />
+
+<img width="1076" height="421" alt="image" src="https://github.com/user-attachments/assets/4829919c-e535-4a39-a6cd-b2f6862d06c1" />
+
 ##### 4. Raportim
 Në fund raportohet:
 - madhësia e dataset-it fillestar,
 - madhësia e dataset-it final,
 - numri i tipareve finale,
 - tiparet e mbajtura, të renditura sipas korrelacionit absolut me `pm25`.
+
+<img width="506" height="151" alt="{7C2D8392-1353-40D2-937B-7035E866EA08}" src="https://github.com/user-attachments/assets/3e56b2a1-22dc-4f9f-843c-b03bd3c7eaee" />
 
 #### Output
 - `data/4E_selected_dataset.csv`
@@ -1159,11 +1207,9 @@ Dataset-i final:
 
 Në vazhdim, ky projekt mund të zgjerohet me:
 
-- modele regresioni për parashikimin e `PM2.5`,
-- krahasim modelesh si Linear Regression, Random Forest, XGBoost, SVR, LSTM,
+- modele decision trees për parashikimin e `PM2.5`,
+- krahasim modelesh si Random Forest, XGBoost,
 - validim temporal `train/validation/test split` sipas kohës,
-- shtim të më shumë stacioneve ose lokacioneve,
-- ndërtim dashboard-i interaktiv për monitorim dhe interpretim,
 - analizë më të avancuar të rëndësisë së tipareve,
 - krahasim të performancës para dhe pas feature selection.
 
