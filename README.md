@@ -914,9 +914,11 @@ Folderi `pictures/4C_visualization_before_after/` përmban figura që krahasojn�
 Këtu mund të shtohen më vonë figurat me sintaksë si:
 
 ```md
-![Pollutant vs Predictors Heatmap](pictures/pollutant_vs_predictors_heatmap.png)
-![Pollutant Correlation Heatmap](pictures/pollutant_correlation_heatmap.png)
-![PM2.5 Before/After](pictures/4C_visualization_before_after/pm25_distribution_comparison.png)
+![Pollutant vs Predictors Heatmap]
+<img width="2702" height="2072" alt="image" src="https://github.com/user-attachments/assets/e02dfac3-c9f8-44ef-847e-efbefa69936c" />
+
+![Pollutant Correlation Heatmap]
+<img width="1911" height="1580" alt="image" src="https://github.com/user-attachments/assets/926df5ae-7a6b-43c5-a9be-b2030dc6a7c7" />
 ```
 
 ---
