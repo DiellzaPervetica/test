@@ -10,12 +10,13 @@
       <p>Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike</p>
       <p>Inxhinieri Kompjuterike dhe Softuerike – Programi Master</p>
       <p><strong>Projekti nga lënda:</strong> Përgatitja dhe vizualizimi i të dhënave</p>
+      <p><strong>Profesor:</strong> Dr. Sc. Lule Ahmedi</p>
       <p><strong>Profesor:</strong> Dr. Sc. Mërgim H. Hoti</p>
       <p><strong>Studentët:</strong></p>
       <ul>
         <li>Diellza Përvetica</li>
-        <li>[Emri i studentit 2]</li>
-        <li>[Emri i studentit 3]</li>
+        <li>Fatjeta Gashi</li>
+        <li>Festina Klinaku</li>
       </ul>
     </td>
   </tr>
@@ -420,6 +421,8 @@ Folderi `1B_distinct_values/` përmban një skedar të veçantë për secilin at
 - `distinct_b2_mw.csv`
 - `distinct_total_generation_mw.csv`
 - si dhe skedarët për atributet meteorologjike të pastruara sipas emërtimit.
+  <img width="604" height="222" alt="{A8AA16F4-5094-43F5-B530-BBB76CC2ED9E}" src="https://github.com/user-attachments/assets/8cee1f9f-f6c4-43ee-acff-938ff9349315" />
+
 
 #### Roli ne pipeline
 Ky hap mbështet eksplorimin fillestar të shpërndarjeve dhe kontrollin e domenit të vlerave.
